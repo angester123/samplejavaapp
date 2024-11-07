@@ -17,6 +17,10 @@
 
     <repositories>
         <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
             <id>vaadin-prereleases</id>
             <name>Vaadin Pre-releases</name>
             <url>https://maven.vaadin.com/vaadin-prereleases</url>
@@ -34,10 +38,6 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </repository>
-        <repository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
         </repository>
         <repository>
             <id>jaxb</id>
@@ -151,7 +151,7 @@
         <dependency>
             <groupId>com.sun.xml.security</groupId>
             <artifactId>xml-security-impl</artifactId>
-            <version>2.2.1</version> <!-- Updated version as per suggestion -->
+            <version>2.3.0</version> <!-- Alternative version for resolution -->
         </dependency>
     </dependencies>
 
