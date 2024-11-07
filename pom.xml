@@ -17,10 +17,6 @@
 
     <repositories>
         <repository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-        <repository>
             <id>vaadin-prereleases</id>
             <name>Vaadin Pre-releases</name>
             <url>https://maven.vaadin.com/vaadin-prereleases</url>
@@ -40,12 +36,21 @@
             </snapshots>
         </repository>
         <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
             <id>jaxb</id>
             <url>https://repo1.maven.org/maven2</url>
         </repository>
         <repository>
             <id>jcenter</id>
             <url>https://jcenter.bintray.com/</url>
+        </repository>
+        <!-- Added JBoss repository for xml-security-impl -->
+        <repository>
+            <id>jboss-releases</id>
+            <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
         </repository>
     </repositories>
 
@@ -148,10 +153,11 @@
             <artifactId>jackson-jaxrs</artifactId>
             <version>1.9.13</version>
         </dependency>
+        <!-- Updated xml-security-impl dependency -->
         <dependency>
             <groupId>com.sun.xml.security</groupId>
             <artifactId>xml-security-impl</artifactId>
-            <version>2.3.0</version> <!-- Alternative version for resolution -->
+            <version>2.1.2</version>
         </dependency>
     </dependencies>
 
